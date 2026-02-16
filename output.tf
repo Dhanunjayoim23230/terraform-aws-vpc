@@ -25,14 +25,14 @@ output "igwid" {
 # }
 
 output "public_subnet_info" {
-    value = aws_subnet.public
+    value = aws_subnet.public[*].id
   
 }
 output "private_subnet_info" {
-    value = aws_subnet.private
+    value = aws_subnet.private[*].id
   
 }
 output "database_subnet_info" {
-    value = aws_subnet.database
+    value = aws_subnet.database[*].id
   
 }
