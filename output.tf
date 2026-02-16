@@ -28,3 +28,11 @@ output "public_subnet_info" {
     value = aws_subnet.public
   
 }
+output "private_subnet_info" {
+    value = aws_subnet.private
+  
+}
+output "database_subnet_info" {
+    value = aws_subnet.database
+  
+}
